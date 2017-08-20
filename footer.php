@@ -1,3 +1,10 @@
+<div class="side-bar">
+     <?php if(is_active_sidebar('sidebar')) : ?>
+        <?php dynamic_sidebar('sidebar'); ?>
+     <?php endif; ?>
+</div>
+<div class="clr"></div>
+</div><!-- end div.container -->
        <footer>
           <div class="container">
           

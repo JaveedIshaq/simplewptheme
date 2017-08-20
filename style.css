@@ -12,14 +12,25 @@ body{
 	font-size: 15px;
 	color: #333;
 	background-color: #f4f4f4;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	line-height: 1.7em;
 	
 }
-
+.clr{
+	clear: both;
+}
+a{
+	color: #333; 
+}
 header{
-    background: #393939;
-    color: #fff;
-    padding: 20px 10px;	
+	background: #393939;
+	color: #fff;
+	padding-top: 20px;	
+}
+header a{
+	color: #fff;
+	text-decoration: none;
 }
 header h1{
 	color: #fff;
@@ -35,6 +46,12 @@ header h1{
 }
 .main{
 	margin: 15px 0;
+	float: left;
+	width: 68%;
+}
+.side-bar{
+	float: right;
+	width: 28%;
 }
 
 footer{
@@ -42,4 +59,61 @@ footer{
 	color: #fff;
 	padding: 10px 10px;
 	text-align: center;
+}
+article.post{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+article.post a.button{
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	padding: 10px 5px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.meta{
+	background: #333;
+	color: #fff;
+	padding:5px;
+}
+.post-thumbnail img{
+	width: 100%;
+	height: auto;
+}
+.main-nav{
+	background: #000;
+	color: #fff;
+	margin-top: 15px;
+}
+.main-nav ul{
+	margin: 0;
+	padding: 0;
+}
+.main-nav li{
+	list-style: none;
+	display: inline;
+	float: left;
+	padding-right: 15px;
+}
+.main-nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.widget{
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.widget li{
+	list-style: none;
+	line-height: 2.2em;
+	border-bottom: 1px dotted #ccc;
+}
+.widget li a{
+  text-decoration: none;
 }

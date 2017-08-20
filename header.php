@@ -10,7 +10,15 @@
 <body>
        <header>
                <div class="container">
-       	        <h1><?php bloginfo('name'); ?></h1>
+       	        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
        	        <span><?php bloginfo('description'); ?></span>
                </div>
+               <nav class="main-nav">
+                   <div class="container">
+                     <?php 
+                           $args = array('theme_location' => 'primary');
+                      ?>  
+                      <?php wp_nav_menu($args); ?>  
+                   </div>
+               </nav>
        </header>
